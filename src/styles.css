@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html {
+    background-color: hsl(185, 41%, 84%);
+}
+@font-face {
+    font-family: "SpaceMono-Bold";
+    src: local("fonts"), url(./assets/fonts/SpaceMono-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "SpaceMono-Regular";
+    src: local("fonts"), url(./assets/fonts/SpaceMono-Regular.ttf) format("truetype");
+}

@@ -1,0 +1,207 @@
+/*font related*/
+.labelAndinput label, .mobile label, .mobile button, .web label, .web button, .custom, .leftTop, .leftBottom{
+    font-family: SpaceMono-Regular;
+}
+.title, .reset, .right{
+    font-family: SpaceMono-Bold;
+}
+
+/*style related*/
+.box{
+    width:80%;
+    position:absolute;
+    top:25%;
+    left:25%;
+    transform: translate(-20%,-20%);
+}
+/*splitter*/
+.title{
+    text-align: center;
+    margin-bottom:5%;
+    font-size: 24px;
+}
+/*white box*/
+.calculator{
+    width:100%;
+    aspect-ratio: 20 / 11;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    padding:5%;
+}
+
+/*left side*/
+.inputs{
+    width:50%;
+    float:left;
+    padding-right: 5%;
+}
+.labelAndinput{
+    width:100%;
+}
+
+.input-container{
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+}
+.input-container input{
+    font-size: 24px;
+    width: 90%;
+    text-align: right;
+    border:none;
+    background-color: hsl(189, 41%, 97%);
+    
+}
+.input-container input:focus{
+    outline: none;
+}
+/* hide input arrows*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*when div is clicked*/
+.input-container:focus-within, .active{
+    border: 3px solid hsl(172, 67%, 45%);
+}
+.grid {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+/*tips of 5,10,15,25,50*/
+.tips{
+    border: none;
+    width: 30%;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding:5px;
+}
+.tips:focus{
+    background-color: hsl(172, 100%, 74%);
+}
+.tipsActive{
+    border: none;
+    width: 30%;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding:5px;
+}
+.custom{
+    width:30%;
+    border-radius: 5px;
+    text-align: center;
+}
+.custom:focus{
+    border: 3px solid hsl(172, 67%, 45%);
+    outline: none;
+}
+*{box-sizing:border-box;}
+
+
+/*right side*/
+.calculations{
+    width:50%;
+    height:100%;
+    float:left;
+    border-radius: 15px;
+    background-color: hsl(183, 100%, 15%);
+    padding:5%;
+    position: relative;
+}
+.left{
+    width: 40%;
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+.leftTop{
+    color: hsl(0, 0%, 100%)
+}
+.leftBottom{
+    color: hsl(172, 67%, 45%);
+}
+.right{
+    font-size: 24px;
+    text-align:right;
+    width: 60%;
+    color: hsl(172, 67%, 45%);
+}
+.reset{
+    border: none;
+    width:80%;
+    padding:3%;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    position: absolute;
+    left:10%;
+    bottom: 10%;
+    border-radius: 5px;
+}
+
+.mobile{
+    display: none;
+    
+}
+
+@media screen and (max-width: 700px){
+    .mobile{
+        display:inline;
+    }
+    .web{
+        display:none;
+    }
+    .box{
+        width:100%;
+        position:absolute;
+        top: 5%;
+        left:0;
+        transform: translate(0,0);
+    }
+    /*white box*/
+    .calculator{
+        width:100%;
+        aspect-ratio: 1 / 1;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        padding:5%;
+    }
+    .inputs{
+        width:100%;
+        float:none;
+        padding-right: 0;
+        padding-bottom: 5%;
+    }
+    .calculations{
+        width:100%;
+        height:max-content;
+        float:none;
+        border-radius: 15px;
+        background-color: hsl(183, 100%, 15%);
+        padding:5%;
+        position: relative;
+    }
+    .reset{
+        border: none;
+        width:100%;
+        padding:3%;
+        background-color: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+        position: relative;
+        left:0;
+        bottom: 0;
+        border-radius: 5px;
+    }
+}
+
