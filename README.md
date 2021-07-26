@@ -1,3 +1,5 @@
+Own solution to this challenge but using angular: https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
+
 # TipCalculator
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
